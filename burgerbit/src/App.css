@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.mainApp {
+  height: 100vh;
+  background: rgb(30, 0, 112);
+  overflow: hidden;
+}
+
+.mainApp .navBar {
+  position: relative;
+  display: flex;
+}
+
+.nav {
+  width: 100%;
+  height: 7vh;
+  background-color: #00000067;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 0 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Hahmlet", serif;
+  margin-right: 40px;
+
+}
+
+.section h1 {
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  color: white;
+  font-style: italic;
+  font-size: 50px;
+  position: relative;
+  top: 300px;
+  transform: rotate(-5deg);
+  text-shadow: #f832ff 3px 3px 6px;
+  animation: sectionh1 2s;
+}
+
+@keyframes sectionh1 {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.navText :hover {
+  color: rgb(252, 66, 128);
+  transition: 0.5s;
+}
+
+.navText {
+  position: relative;
+  right: 15%;
+}
+
+.mainLogo {
+  color: white;
+  font-family: "Hahmlet", serif;
+  display: inline-block;
+  position: relative;
+  left: 5%;
+  align-self: center;
+}
+
+.mainLogo h1 {
+  display: inline-block;
+  margin-left: 45px;
+}
+
+#homeSvg {
+  width: 30px;
+  position: absolute;
+  top: 25%;
+  right: 5%;
+}
+
+#logo {
+  width: 30px;
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+}
+
+@media screen and (max-width: 600px) {
+  .link {
+    display: none;
+  }
+
+  section p {
+    font-size: 20px;
+  }
+  
+}
+
+
+
